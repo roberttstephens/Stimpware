@@ -1,0 +1,16 @@
+group by fname or lname
+use double quotes around the quote
+check into python script to input large amounts of data
+  separate fields by underscore. split by 
+example input for database cloudspace table quotes
+
+INSERT INTO  `cloudspace`.`quotes` (
+  `id` ,
+  `quote_text` ,
+  `author_fname` ,
+  `author_lname`
+)
+VALUES (
+  NULL ,  '"For me, it is far better to grasp the Universe as it really is than to persist in delusion, however satisfying and reassuring."',  'Carl',  'Sagan'
+);
+
