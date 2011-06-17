@@ -1,7 +1,6 @@
 <?php
 //include ('libs/mysqliConnect.php');
 
-<?php 
 //include the below code in the above file. 
 $mysqli = new mysqli('localhost', 'root', 'taint1234', 'cloudspace'); 
 
