@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="libs/style.css">
     <title>Welcome!</title>
   </head>
   <body>
@@ -10,9 +10,9 @@
       <div class='header'>Favorite science quotes
       </div>
       <div class='sidebar'>
-        &raquo; <a href="#" onclick="toggleDiv('home');">Home</a> <br>
-        &raquo; <a href='#'>About</a> <br>
-        &raquo; <a href='#'>Contact</a> <br>
+        <a href="#" id="home" onclick="toggleDiv('home')">Home</a> <br>
+        <a href='#' id="about" onclick="toggleDiv('about')">About</a> <br>
+        <a href='#' id="contact" onclick="toggleDiv('contact')">Contact</a> <br>
       </div>
       </div>
-    <div class='main'>
+    <div class='mainParent'>
