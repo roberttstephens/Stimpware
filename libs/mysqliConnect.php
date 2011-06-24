@@ -2,7 +2,7 @@
 
 $host = 'localhost';
 $user = 'root';
-$passwd = 'taint1234';
+$passwd = 'notshowingpassword';
 $database = 'cloudspace';
 
 
