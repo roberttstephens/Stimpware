@@ -1,8 +1,8 @@
  <?php
 
 $host = 'localhost';
-$user = 'root';
-$passwd = 'notshowingpassword';
+$user = 'cloudspace';
+$passwd = 'cloudspace';
 $database = 'cloudspace';
 
 
