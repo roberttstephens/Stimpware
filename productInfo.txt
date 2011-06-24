@@ -1,0 +1,32 @@
+Product id key
+
+
+First two digits (
+  01 = laptop
+  02 = desktop
+  03 = tablet
+  04 = mp3player
+  05 = camera
+  06 = cell
+  )
+
+Third digit (
+  0 = is not accessory
+  1 = is accessory
+  )
+
+digits 4-7 = arbitrary
+
+last digit = color(
+  0 = black
+  1 = Gray/Silver
+  2 = violet
+  3 = blue
+  4 = green
+  5 = yellow
+  6 = orange
+  7 = red
+  8 = pink
+  9 = white
+)
+  

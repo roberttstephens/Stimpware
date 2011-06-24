@@ -1,8 +1,8 @@
  <?php
 
 $host = 'localhost';
-$user = 'root';
-$passwd = 'taint1234';
+$user = 'cloudspace';
+$passwd = 'cloudspace';
 $database = 'cloudspace';
 
 

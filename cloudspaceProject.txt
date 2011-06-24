@@ -5,8 +5,6 @@ Whole project:
 
  - I've debated familiarizing myself with an IDE more, but have decided that vim offers all of the capabilities that I need, and some research shows that quite a few professionals use vim. I have it set up for tab completion, autoindention, tabs, and tag wrappers. I'm definitely willing to learn an IDE, but man I love vim. I had a great time tweaking it for php and html. 
 
- - Once done, I really want to get into some more python, then work my way to lower level. I'm dying to mess with some java projects. (this has nothing to do with work, just a personal note). 
-
 
 Database: 
  - I'm no longer doing quotes for the database. it doesn't give me the ability to optimize the database, and doing "group by" the author doesn't make much sense anyway. I've decided to do something a little more applicable to the real world. Cont...
@@ -19,7 +17,7 @@ Git/github:
  - Awesome, I've heard how it's better than subversion, but this is the first that I've used it. It's a really cool implementation. I like the community behind git also. 
 
 Javascript/jquery:
- - Originally I was using jquery to toggle divs if an anchor tag was clicked. It ended up being easier to write a basic onclick javascript function. The site needs to be accessible via phones, but I've put stuff like that on hold until I actually finish the project (I took too much time messing with trivial things). Jquery is still being used to load elements into a div.
+ - Originally I was using jquery to toggle divs if an anchor tag was clicked. It ended up being easier to write a basic onclick javascript function. The site needs to be accessible via phones, but I've put stuff like that on hold until I actually finish the project (I took too much time messing with trivial things). Jquery is still being used to load elements into a div. Update, I ended up just removing the anchor tags. I like having jquery load the elements, but it's a bit combersome. I'm probably better off using the KISS method here.
 
 CSS:
  - I kind of confused myself working with too many nested elements. It works, but it should have been written cleaner. Some children elements have attributes that are already defined by their parents which makes it more difficult to read than necessary. Like above, I may mess with it once I get the core site functionality.
