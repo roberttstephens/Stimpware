@@ -34,7 +34,7 @@ It's 3 am, and I'm probably ranting, so I'll do more later on.
   * The code below is the code that was inserted into the mysql cli. 
 **/
 CREATE TABLE customer (
-  customer_id SMALLINT UNSIGNED NOT NULL
+  customer_id VARCHAR(13) NOT NULL 
   ,fname VARCHAR(30) NOT NULL
   ,lname VARCHAR(30) NOT NULL
   ,zip CHAR(5) NOT NULL
@@ -45,8 +45,8 @@ ENGINE=INNODB;
 
 
 CREATE TABLE `order` (
-  order_id SMALLINT UNSIGNED NOT NULL
-  ,customer_id SMALLINT UNSIGNED NOT NULL
+  order_id VARCHAR(13) NOT NULL 
+  ,customer_id VARCHAR(13) NOT NULL 
   ,date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
   ,PRIMARY KEY(order_id)
   ,FOREIGN KEY (customer_id) REFERENCES customer(customer_id)
@@ -57,9 +57,9 @@ ENGINE=INNODB;
 
 
 CREATE TABLE product (
-  product_id SMALLINT UNSIGNED NOT NULL
-  ,name VARCHAR(20) NOT NULL
-  ,description VARCHAR(255) NOT NULL
+  product_id VARCHAR(8) NOT NULL 
+  ,name VARCHAR(255) NOT NULL
+  ,description Text(600) NOT NULL
   ,price DECIMAL(10,2) UNSIGNED NOT NULL
   ,category VARCHAR(20) NOT NULL
   ,PRIMARY KEY(product_id)
@@ -68,9 +68,9 @@ ENGINE=INNODB;
 
 
 CREATE TABLE order_product (
-  `id` SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT
-  ,order_id SMALLINT UNSIGNED NOT NULL
-  ,product_id SMALLINT UNSIGNED NOT NULL
+  `id` INT(11) UNSIGNED NOT NULL AUTO_INCREMENT
+  ,order_id VARCHAR(13) NOT NULL 
+  ,product_id VARCHAR(8) NOT NULL 
   ,PRIMARY KEY(id)
   ,FOREIGN KEY (order_id) REFERENCES `order`(order_id)
   ,FOREIGN KEY (product_id) REFERENCES product(product_id)

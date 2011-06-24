@@ -3,16 +3,17 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
     <link rel="stylesheet" type="text/css" href="libs/style.css">
-    <title>Welcome!</title>
+    <title>Stimpware</title>
   </head>
   <body>
     <div class='sitewide'>
-      <div class='header'>Favorite science quotes
+      <div class='header'>Stimpware Electronics
       </div>
       <div class='sidebar'>
-        <a href="#" id="home" onclick="toggleDiv('home')">Home</a> <br>
-        <a href='#' id="about" onclick="toggleDiv('about')">About</a> <br>
-        <a href='#' id="contact" onclick="toggleDiv('contact')">Contact</a> <br>
+        <a href="index.php">Home</a> <br>
+        <a href="about.php">About</a> <br>
+        <a href="contact.php">Contact</a> <br>
+        <a href="register.php">Register</a> <br>
       </div>
-      </div>
+    </div>
     <div class='mainParent'>

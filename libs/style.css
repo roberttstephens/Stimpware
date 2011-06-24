@@ -44,7 +44,12 @@ body {
   font-size: 16px;
   color: #333333;
   margin-top: 10px;
-  display: none;
 }
 
-
+.label {
+  display: block;
+  width: 80px;
+  float: left;
+/*  text-align: left;
+*/
+}

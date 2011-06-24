@@ -1,12 +1,27 @@
 
-function toggleDiv(divId) {
-  $('.mainContent').hide();
-  $('.mainContent#'+divId).show();
-}
+/* below used onclick="toggleDiv('contact')" in the ahref tag
+ * function toggleDiv(divId) {
+ *   $('.mainContent').hide();
+ *   $('.mainContent#'+divId).show();
+ *   }
+ *
+ *
+*/
 $(document).ready(function () {
-  $('.mainContent#home').show();
-  $('.mainContent#home').load('ajaxLoad.php')
+  $('#register').submit(function () {
+    $.post('libs/ajaxPost.php', $('#register').serialize(), function(data) {
+        alert(data);
+    });
+//      $('.mainContent#home').load('libs/ajaxLoad.php')
+      return false;
   });
+  $('#home').submit(function () {
+    $('.mainContent#load').load('libs/ajaxLoad.php');
+    return false;
+ 
+  });
+});
+
 /* below is the jquery. the "a href onlick" is used above
   $('#home').click(function (){
       $('.mainContent').hide();

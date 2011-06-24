@@ -1,19 +1,18 @@
-<?php
+ <?php
 
-$dblocation = 'localhost';
-$username = 'root';
+$host = 'localhost';
+$user = 'root';
 $passwd = 'taint1234';
-$dbname = 'cloudspace';
+$database = 'cloudspace';
 
-@ $db = new mysqli($dblocation, $username, $passwd, $dbname);
-/*
-if ($db->connect_error) {
-  die('Connect Error (' . $db->connect_errno . ') '
-    . $db->connect_error);
-}
-*/
+
+
+$mysqli = new mysqli($host, $user, $passwd, $database);
+
 if (mysqli_connect_errno()) {
-      printf("Connect failed: %s\n", mysqli_connect_error());
-          exit();
+    printf("Can't connect to MySQL Server. Errorcode: %s\n", mysqli_connect_error());
+      exit;
 }
+
+ 
 ?>
